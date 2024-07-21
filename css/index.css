@@ -1,0 +1,231 @@
+:root{
+    --cyan : #59B9C7;
+}
+
+header, footer{
+    background-image: url(../assets/image/accueil2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    padding-top:5%;   
+}
+
+button{
+    background-color:var(--cyan)!important;
+    padding:10px !important;
+    padding: 10px !important;
+    cursor:pointer;
+    
+}
+.navbar-nav a{
+    transition: color 1s;
+    cursor:pointer;
+}
+.navbar-nav a:hover{
+    color: #464646 !important;
+    border-top:2px solid #464646;
+    cursor:pointer;
+
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.search-bar input, .search-bar select, .search-bar button{
+    padding: 10px;
+    font-size: 2vh;
+    border-radius:8px;
+    border:2px solid var(--cyan);
+    color:white;
+    background-color: var(--cyan);
+    text-align: center;
+    cursor:pointer;
+}
+#origin-city::placeholder, #origin-date::placeholder, #arrival-date::placeholder, #destination::placeholder {
+    color: white;
+}
+
+.search-bar button {
+    background-color: var(--cyan);
+    color:white;
+    border: 2px solid var(--cyan);
+    cursor: pointer;
+    padding:0;
+    margin:0;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: white !important;
+    color:var(--cyan) !important;
+    cursor:pointer;
+}
+.slogan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 4vh;
+    color:white;
+    padding:20vh;
+}
+
+.subtitle{
+    color:var(--cyan);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom:2em;
+}
+.card-image-top{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+   
+}
+
+.hero-image {
+    position: relative;
+    max-height: 300px;
+    max-width: 1000px; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--cyan);
+    padding: 20px;
+    border-radius: 8px;
+}
+/*style footer*/
+.bloc0{
+    display:flex ;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.bloc1, .bloc2, .bloc3 {
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    font-size: medium;
+}
+.bloc1 a, .bloc2 a, .bloc3 a{
+    color: white;
+    text-decoration: none;
+    transition: color 1s;
+}
+.bloc1 a:hover, .bloc2 :hover, .bloc3 :hover{
+    color: #464646;
+    cursor:pointer;
+    
+}
+
+.sousbloc{
+    display:flex;
+    gap:20px;
+}
+
+.fa-brands{
+    color:white;
+    font-weight: 700;
+    font-size:2em;
+}
+/*debut des media querry*/
+
+@media (max-width: 1400px) {
+    .navbar-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+}
+.bloc1, .bloc2, .bloc3{
+    font-weight: 900;
+    font-size:2em;
+}
+}
+
+/* Pour les écrans moyen moins de 992px */
+@media (max-width: 992px) {
+    
+    .slogan {
+        font-size: 3vh;
+        padding: 15vh 10px;
+        text-align: center;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        align-items: center;
+
+    }
+    
+    .search-bar input, .search-bar select, .search-bar button {
+        width: 70%;
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 1.5vh;
+        padding: 5px 10px;
+    }
+    .bloc1, .bloc2, .bloc3{
+        font-weight: 600;
+        font-size:0.8em;
+}
+}
+
+/* Pour les petits écrans moins de 577px */
+@media (max-width: 576px) {
+   
+    .slogan {
+        font-size: 2.5vh;
+        padding: 10vh 5px;
+        text-align: center;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+    
+    .search-bar input, .search-bar select, .search-bar button {
+        width: 100%;
+        font-size: 1.5vh;
+    }
+
+    .btn {
+        font-size: 1.2vh;
+        padding: 3px 5px;
+    }
+
+    .bloc1, .bloc2, .bloc3{
+        font-weight: 500;
+        font-size:0.6em;
+}
+}

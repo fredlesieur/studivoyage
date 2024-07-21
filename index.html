@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">
+                    <img src="assets/logo/studiVoyagesTransparent.webp" alt="Bootstrap" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fs-4 ">
+                        <a class="nav-link text-white active" aria-current="page" href="#home">Accueil</a>
+                        <a class="nav-link text-white" href="more_search.html">Les plus recherchés </a>
+                        <a class="nav-link text-white" href="depaysants.html">Les plus dépaysants </a>
+                        <a class="nav-link text-white" href="last_minute.html">Les dernières minutes </a>
+                        <a class="nav-link text-white me-5" href="contact.html">Contact</a>
+                    </div>
+                    <a href="connexion.html"  target="_blank" ><button type="button" class="btn btn-primary me-5">Se Connecter</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="slogan">
+            <h1>
+                Créez des souvenirs,<br>
+                explorez sans limites !
+            </h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder=" Destination (Pays,Ville)" id="destination">
+            <select id="filter">
+                <option value="">Ville de départ</option>
+                <option value="option1">Paris</option>
+                <option value="option2">Bordeaux</option>
+                <option value="option3">Marseille</option>
+                <option value="option2">Brest</option>
+                <option value="option3">Strasbourg</option>
+                <option value="option2">Lille</option>
+                <option value="option3">Nantes</option>
+                <option value="option2">Lyon</option>
+                <option value="option3">mulhouse</option>
+            </select>
+            <input type="text" placeholder="Date de départ (J/M/A)" id="origin-date">
+            <input type="text" placeholder="Date d'arrivée (J/M/A)" id="arrival-date">
+            <select id="filter">
+                <option value="">Filtre</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <button class="style_button" type="button" id="search-button">Rechercher</button>
+        </div>
+    </header>
+    <section class="subtitle" id="more_search">
+        <h2> Les plus recherchés</h2>
+        <div class="container d-flex mt-5">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <a href=""><img src="assets/image/image27.jpg" class="card-img-top custom-card-image" alt="plage au maldive"></a>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image26.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image25.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image24.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex mt-3">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image23.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image22.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image21.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image20.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero-image-container" id="last_minute">
+            <div class=" col-12 hero-image mt-3">
+                <img src="assets/image/image32.jpg" alt="Image héro" class="img-fluid custom-card-image">
+                <div class="hero-text">
+                    <h2 class="hero-title text-white">Les offres de dernières minutes</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subtitle" id="depaysants">
+        <h2> Les plus dépaysants</h2>
+        <div class="container d-flex mt-5">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image19.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,8/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-51%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 420€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 850€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image 7.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image10.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image11.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex mt-3">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/accueil2.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image13.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image14.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-2">
+                    <div class="card">
+                        <img src="assets/image/image15.jpg" class="card-img-top custom-card-image" alt="plage au maldive">
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Maldives,l'atol de Baa</h5>
+                                        <p class="card-text">Hotel ****</p>
+                                        <p class="card-text"><small class="text-muted">séjour, 8jours, 7nuits</small></p>
+                                        <p class="card-text"><small class="text-muted">notes de nos clients 4,9/5</small></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text"><br><br></p>
+                                        <p class="card-text">-53%</p>
+                                        <p class="card-text"><small class="text-muted">A partir de 562€*</small></p>
+                                        <p class="card-text"><small class="text-muted">au lieu de 1200€</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5">
+           <div class="bloc0">
+                <div class="bloc1">
+                    <div><a href="new_user.html" id="registration">S'inscrire</a></div>
+                    <div><a href="#faq">FAQ</a></div>
+                    <div><a href="#service">Service client</a></div>
+                </div>
+                <div class="bloc3">            
+                    <div class="text-align"><a href="https://entreprendre.service-public.fr/vosdroits/F31228" target="_blank">Mentions légales</a></div>
+                    <div class="text-align"><a href="https://agencergpd.eu/" target="_blank">RGPD </a></div>
+                    <div class="text-align">Siège social - 125 rue paris 75015 -</div>
+                </div>
+                <div class="bloc2">
+                    <div>Retrouvez-nous</div>
+                    <div>sur les réseaux sociaux</div>
+                        <div class="sousbloc">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </footer>
+    <script src="https://kit.fontawesome.com/2ea921c81c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
