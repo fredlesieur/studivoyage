@@ -1,0 +1,112 @@
+:root{
+    --cyan : #59B9C7;
+}
+button{
+    background-color:var(--cyan)!important;
+    padding:10px !important;
+    padding: 10px !important;
+    cursor:pointer;
+    
+}
+body{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin-left: 15px;
+    margin-right:15px;
+}
+.navbar-nav a{
+    transition: color 2s;
+    cursor:pointer;
+    color: var(--cyan)!important;
+}
+.navbar-nav a:hover{
+    color: #464646 !important;
+    border-top:2px solid #464646;
+    cursor:pointer;
+}
+
+h3{
+    color: var(--cyan) !important;
+}
+
+input{
+    border:3px solid var(--cyan) !important;
+}
+
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    }
+
+footer{
+    box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+.bloc0{
+        display:flex ;
+        justify-content: space-around;
+        align-items: center ;
+        margin-bottom: 10px;
+        margin-top:10px
+        
+}
+    
+.bloc1, .bloc2, .bloc3 {
+        text-align: center;
+        color:var(--cyan);
+        font-weight: 900;
+        font-size: medium;
+        
+}
+.bloc1 a, .bloc2 a, .bloc3 a{
+        color: var(--cyan);
+        text-decoration: none;
+        transition: color 1s;
+}
+.bloc1 a:hover, .bloc2 :hover, .bloc3 :hover{
+        color: #464646;
+        cursor:pointer; 
+}
+    
+.sousbloc{
+        display:flex;
+        gap:20px;
+}
+    
+.fa-brands{
+        color:var(--cyan);
+        font-weight: 700;
+        font-size:2em;
+}
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+}
+@media (max-width:1394px){
+   .navbar{
+    flex-wrap: wrap;
+      
+    }
+}
+@media (max-width:768px){
+    footer, header{
+        margin: 0;
+    }
+    .bloc1, .bloc2, .bloc3 {
+        text-align: center;
+        color:var(--cyan);
+        font-weight: 400;
+        font-size: smaller;
+}
+}
