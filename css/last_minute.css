@@ -1,0 +1,144 @@
+:root {
+    --cyan: #59B9C7;
+}
+
+/* position global des balises semantiques*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+header{
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.3);   
+}
+footer{
+    box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width:100%;
+}
+/* position et style navbar et bouton*/
+
+.navbar-nav a{
+    transition: color 2s;
+    cursor:pointer;
+    color: var(--cyan)!important;
+}
+.navbar-nav a:hover{
+    color: #464646 !important;
+    border-top:2px solid #464646;
+    cursor:pointer;
+}
+button{
+    background-color:var(--cyan)!important;
+    padding:10px !important;
+    padding: 10px !important;
+    cursor:pointer;
+
+/* position et style bandeau */       
+}
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+   
+}
+
+.hero-image {
+    position: relative;
+    max-height: 300px;
+    max-width: 1200px; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--cyan);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*position et style elements du footer*/
+
+.bloc0 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.bloc1, .bloc2, .bloc3 {
+    text-align: center;
+    color: var(--cyan);
+    font-weight: 900;
+    font-size: medium;
+}
+
+.bloc1 a, .bloc2 a, .bloc3 a {
+    color: var(--cyan);
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.bloc1 a:hover, .bloc2 a:hover, .bloc3 a:hover {
+    color: #464646;
+    cursor: pointer;
+}
+
+.sousbloc {
+    display: flex;
+    gap: 20px;
+}
+
+.fa-brands {
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 2em;
+}
+/*medias querry*/
+
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1394px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    footer, header {
+        margin: 0;
+    }
+
+    .bloc1, .bloc2, .bloc3 {
+        text-align: center;
+        color: var(--cyan);
+        font-weight: 400;
+        font-size: smaller;
+    }
+}
